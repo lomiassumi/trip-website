@@ -1,0 +1,169 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #222;
+}
+
+/* Replace only .hero in style.css */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80")
+  center/cover no-repeat;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 20px 8%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background: #ff5a36;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e24723;
+}
+
+/* Sections */
+.section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #8b1e1e;
+}
+
+.section p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* Image */
+.tourist-image {
+  width: 100%;
+  max-width: 750px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Button */
+#infoButton {
+  margin-top: 25px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #8b1e1e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#infoButton:hover {
+  background: #6f1414;
+}
+
+#factText {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #0b6e4f;
+  font-weight: bold;
+}
+
+/* Cards */
+.cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #8b1e1e;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+}
